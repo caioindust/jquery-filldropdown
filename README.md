@@ -14,13 +14,7 @@
 	<script src="src/jquery-filldropdown.js"></script>
 	```
 
-3. Call the plugin:
-
-	```javascript
-	$("#estado").filldropdown();
-	```
-	
-4. Create your code:
+3. Create your code:
 	```html
 	<select id="estado" data-urlaction="/home/getCidade" data-target="#cidade">
 		<option value="">--Select-</option>
@@ -32,8 +26,31 @@
 		<option value="">--Select-</option>
 	</select>
 	```
+	
+4. Call the plugin:
 
+	```javascript
+	$("#estado").filldropdown();
+	```
+	
+## Attributes
+
+| Name           | Type           | Description   |
+| -------------- |:--------------:| -------------:|
+| urlaction      | string         |               |
+| paramiters     | string/function|               |
+| target         | string         |               |
+| valuefield     | string         |               |
+| firstitemtext  | string         |               |
+| waittext       | string         |               |
+| onsuccessafter | function       |               |
+| onsuccess      | function       |               |
+| onerrorafter   | function       |               |
+| onerror        | function       |               |
+
+
+	
 ## License
 
-[MIT License](https://raw.githubusercontent.com/caioindust/jquery-filldropdown/master/LICENSE) ï¿½ Caio Humberto Francisco
+[MIT License](https://raw.githubusercontent.com/caioindust/jquery-filldropdown/master/LICENSE) © Caio Humberto Francisco
 	
