@@ -17,9 +17,7 @@
 3. Call the plugin:
 
 	```javascript
-	$("#element").defaultPluginName({
-		propertyName: "a custom value"
-	});
+	$("#element").filldropdown();
 	```
 	
 
