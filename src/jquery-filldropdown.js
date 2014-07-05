@@ -8,10 +8,10 @@
 ; (function ($, window, document, undefined) {
 
     var pluginName = "filldropdown";
- 
+
     function Plugin(element, options) {
         this.element = element;
-                
+
         this.options = $.extend(true, $.fn.filldropdown.defaults, options, $(this.element).data());
 
         if (typeof this.options.onsuccessafter === "string" && this.options.onsuccessafter !== "") {
@@ -67,7 +67,7 @@
                         var fn_data = eval(parent.options.paramiters);
                         data = fn_data(this);
                     }
-    
+
                     parent.xhr = $.ajax({
                         type: "POST",
                         contentType: "application/json; charset=utf-8",
@@ -76,7 +76,7 @@
                         url: parent.options.urlaction,
                         data: JSON.stringify(data),
                         traditional: true,
-                        success: function (json, e, jqXHR) {
+                        success: function (json) {
                             if (typeof parent.options.onsuccess === "function") {
                                 parent.options.onsuccess(parent, json);
                             }
@@ -144,11 +144,11 @@
         } else if (typeof options === "string" && options[0] !== "_" && options !== "init") {
             var returns;
             this.each(function () {
-                var instance = $.data(this, 'plugin_' + pluginName);
+                var instance = $.data(this, "plugin_" + pluginName);
 
                 if (instance instanceof Plugin) {
 
-                    if (typeof instance[options] === 'function') {
+                    if (typeof instance[options] === "function") {
                         returns = instance[options].apply(instance, Array.prototype.slice.call(args, 1));
                     }
 
@@ -162,18 +162,18 @@
     $.fn[pluginName].defaults = {
         urlaction: "",
         paramiters: function (sender) {
-            return { id: $(sender).val() }
+            return { id: $(sender).val() };
         },
         target: "",
         valuefield: "id",
         textfield: "value",
         firstitemtext: "--Select--",
         waittext: "Wait...",
-        onsuccessafter: function (sender, json) { },
+        onsuccessafter: function () { },// function (sender, json) { },
         onsuccess: function (sender, json) {
             sender.success(json);
         },
-        onerrorafter: function (sender, erro) { },
+        onerrorafter: function () { },//  function (sender, erro) { },
         onerror: function (sender, erro) {
             sender.error(erro);
         }
