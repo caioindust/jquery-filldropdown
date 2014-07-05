@@ -111,7 +111,7 @@
             });
         },
 
-        error: function (erro) {
+        error: function () {
             var FirstItemAux = "<option value=\"\">" + this.options.firstitemtext + "</option>";
             $(this.options.target).empty();
             $(this.options.target).append(FirstItemAux);
