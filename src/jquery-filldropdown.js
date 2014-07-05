@@ -14,24 +14,24 @@
                 
         this.options = $.extend(true, $.fn.filldropdown.defaults, options, $(this.element).data());
 
-        if (typeof this.options.onsuccessafter === "string" && this.options.onsuccessafter != "") {
+        if (typeof this.options.onsuccessafter === "string" && this.options.onsuccessafter !== "") {
             this.options.onsuccessafter = eval(this.options.onsuccessafter);
         }
 
-        if (typeof this.options.onsuccess === "string" && this.options.onsuccess != "") {
+        if (typeof this.options.onsuccess === "string" && this.options.onsuccess !== "") {
             this.options.onsuccess = eval(this.options.onsuccess);
         }
 
-        if (typeof this.options.onerrorafter === "string" && this.options.onerrorafter != "") {
+        if (typeof this.options.onerrorafter === "string" && this.options.onerrorafter !== "") {
             this.options.onerrorafter = eval(this.options.onerrorafter);
         }
 
-        if (typeof this.options.onerror === "string" && this.options.onerror != "") {
+        if (typeof this.options.onerror === "string" && this.options.onerror !== "") {
             this.options.onerror = eval(this.options.onerror);
         }
 
-        if (typeof this.options.data === "string" && this.options.data != "") {
-            if (typeof eval(this.options.data) === 'function') {
+        if (typeof this.options.data === "string" && this.options.data !== "") {
+            if (typeof eval(this.options.data) === "function") {
                 this.options.data = eval(this.options.data);
             }
         }
@@ -49,7 +49,7 @@
 
             $(this.element).on("change", function () {
 
-                if (parent.xhr && parent.xhr.readystate != 4) {
+                if (parent.xhr && parent.xhr.readystate !== 4) {
                     parent.xhr.abort();
                 }
 
