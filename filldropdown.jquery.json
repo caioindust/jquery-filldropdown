@@ -1,0 +1,36 @@
+{
+	"name": "filldropdown",
+	"title": "jQuery FillDropdown",
+	"description": "A jump-start for jQuery plugins development.",
+	"keywords": [
+		"jquery",
+		"filldropdown",
+		"plugins"
+	],
+	"version": "2.0",
+	"author": {
+		"name": "Caio Humberto Francisco",
+		"email": "caio.in.dust@gmail.com",
+		"url": "https://github.com/caioindust"
+	},
+	"maintainers": [
+		{
+			"name": "Caio Humberto Francisco",
+			"email": "caio.in.dust@gmail.com",
+			"url": "https://github.com/caioindust"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://mit-license.org/"
+		}
+	],
+	"bugs": "https://github.com/caioindust/jquery-filldropdown/issues",
+	"homepage": "http://jqueryboilerplate.com",
+	"docs": "https://github.com/caioindust/jquery-filldropdown",
+	"download": "https://github.com/caioindust/jquery-filldropdown/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.11.0"
+	}
+}
