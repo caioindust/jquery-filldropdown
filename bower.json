@@ -1,0 +1,18 @@
+{
+	"name": "jquery-filldropdown",
+	"version": "2.0",
+	"homepage": "https://github.com/caioindust/jquery-filldropdown",
+	"authors": [
+		"Caio Humberto Francisco <caio.in.dust@gmail.com>"
+	],
+	"description": "jQuery FillDropdown",
+	"main": "src/jquery-filldropdown.js",
+	"keywords": [
+		"jquery",
+		"plugin",
+		"filldropdown",
+		"jquery-plugin",
+		"jquery-filldropdown"
+	],
+	"license": "MIT"
+}
