@@ -11,7 +11,7 @@
 2. Include plugin's code:
 
 	```html
-	<script src="dist/jquery.boilerplate.min.js"></script>
+	<script src="src/jquery-filldropdown.js"></script>
 	```
 
 3. Call the plugin:
