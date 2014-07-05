@@ -17,11 +17,23 @@
 3. Call the plugin:
 
 	```javascript
-	$("#element").filldropdown();
+	$("#estado").filldropdown();
 	```
 	
+4. Create your code:
+	```html
+	<select id="estado" data-urlaction="/home/getCidade" data-target="#cidade">
+		<option value="">--Select-</option>
+		<option value="1">SP</option>
+		<option value="2">RJ</option>
+	</select>
+
+	<select id="cidade">
+		<option value="">--Select-</option>
+	</select>
+	```
 
 ## License
 
-[MIT License](https://raw.githubusercontent.com/caioindust/jquery-filldropdown/master/LICENSE) © Caio Humberto Francisco
+[MIT License](https://raw.githubusercontent.com/caioindust/jquery-filldropdown/master/LICENSE) ï¿½ Caio Humberto Francisco
 	
