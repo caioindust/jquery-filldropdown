@@ -36,7 +36,7 @@
 ## Attributes
 
 | Name           | Type           | Description   |
-| -------------- |:--------------:| -------------:|
+| -------------- | -------------- | ------------- |
 | urlaction      | string         |               |
 | paramiters     | string/function|               |
 | target         | string         |               |

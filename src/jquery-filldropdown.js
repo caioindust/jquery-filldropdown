@@ -12,7 +12,7 @@
     function Plugin(element, options) {
         this.element = element;
 
-        this.options = $.extend(true, $.fn.filldropdown.defaults, options, $(this.element).data());
+        this.options = $.extend(false, $.fn.filldropdown.defaults, options, $(this.element).data());
 
         if (typeof this.options.onsuccessafter === "string" && this.options.onsuccessafter !== "") {
             this.options.onsuccessafter = eval(this.options.onsuccessafter);
